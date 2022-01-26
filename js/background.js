@@ -13,8 +13,9 @@ class Background {
 		textSize(20);
 		textFont(scoreFont);
 		textStyle(BOLD);
-		text(`Score: ${game.score}`, 10, 50);
-		image(game.livesImage, 10, 50);
-		text(`${game.lives}`, 50, 80);
+		fill(255,255,255)
+		text(`Score: ${game.score}`, 30, 50);
+		image(game.livesImage, 30, 50);
+		text(`${game.lives}`, 70, 80);
 	}
 }

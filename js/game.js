@@ -42,7 +42,7 @@ class Game {
 			push();
 			textSize(30);
 			textAlign(CENTER);
-			text("Collect the treat!\n\nPress SPACE to start", 480, 210);
+			text("Collect the treat!\n\nPress SPACE to start", 420, 210);
 			pop();
 		}
 		
@@ -68,7 +68,7 @@ class Game {
 			}
 		})
 
-		if (frameCount % 120 === 0) {
+		if (frameCount % 280 === 0) {
 			// console.log(frameCount)
 			// we add coins to the obstacles array
 			this.broccolis.push(new Broccoli(this.broccoliImage))
@@ -90,12 +90,12 @@ class Game {
 		})
 		
 		if (this.lives === 0) {
-			textSize(80);
+			textSize(60);
 			textAlign(CENTER);
-			text(`GAME OVER`, 480, 200);
+			text(`GAME OVER`, 420, 200);
 	  
-			textSize(40);
-			text("Press ENTER to restart", 480, 260);
+			textSize(30);
+			text("Press ENTER to restart", 420, 260);
 			this.gameOver = true;
 			game.sound.stop();
 			noLoop();
