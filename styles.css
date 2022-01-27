@@ -3,6 +3,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Spartan", sans-serif;
-  background-color: white ;
+  font-family: Helvetica, sans-serif;
+  font-size: larger;
+  background-color: rgb(255, 244, 244) ;
 }

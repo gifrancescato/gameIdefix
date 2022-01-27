@@ -1,7 +1,7 @@
 class Player {
 
 	constructor() {
-		this.width = 100
+		this.width = 120
 		this.height = 75
 		this.x = 30
 		this.y = height - this.height

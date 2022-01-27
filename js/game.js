@@ -42,7 +42,7 @@ class Game {
 			push();
 			textSize(30);
 			textAlign(CENTER);
-			text("Collect the treat!\n\nPress SPACE to start", 420, 210);
+			text("Collect the treats!\n\nPress SPACE to start", 420, 210);
 			pop();
 		}
 		
