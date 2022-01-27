@@ -4,7 +4,7 @@ class Broccoli {
 	constructor(image) {
 		this.image = image
 		this.x = width
-		this.y = 450
+		this.y = random(300, 450)
 		this.width = 50
 		this.height = 50
 	}

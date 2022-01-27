@@ -46,8 +46,9 @@ class Game {
 			pop();
 		}
 		
+		
 
-		if (frameCount % 120 === 0) {
+		if (gameStart === true && frameCount % 120 === 0) {
 			// console.log(frameCount)
 			// we add coins to the obstacles array
 			this.obstacles.push(new Obstacle(this.hamImage))
@@ -68,7 +69,7 @@ class Game {
 			}
 		})
 
-		if (frameCount % 280 === 0) {
+		if (gameStart === true && frameCount % 280 === 0) {
 			// console.log(frameCount)
 			// we add coins to the obstacles array
 			this.broccolis.push(new Broccoli(this.broccoliImage))
@@ -81,7 +82,7 @@ class Game {
 
 		this.broccolis = this.broccolis.filter(broccoli => {
 			console.log(this)
-			// also id the coin leaves the screen we remove it from the array
+			// also id the broccoli leaves the screen we remove it from the array
 			if (broccoli.collision(this.player) || broccoli.x < 0) {
 				return false
 			} else {
@@ -97,7 +98,6 @@ class Game {
 			textSize(30);
 			text("Press ENTER to restart", 420, 260);
 			this.gameOver = true;
-			game.sound.stop();
 			noLoop();
 		  }
 
