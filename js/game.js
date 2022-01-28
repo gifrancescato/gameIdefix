@@ -12,6 +12,7 @@ class Game {
 		this.broccolis = []
 	}
 
+	
 	preload() {
 		this.backgroundImages = [
 			{ src: loadImage('assets/background/1BG.png'), x: 0, speed: 0.1 },
